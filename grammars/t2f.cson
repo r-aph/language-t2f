@@ -1,0 +1,47 @@
+scopeName: 'source.t2f'
+name: 'text2form'
+fileTypes: [
+  'txt'
+]
+limitLineLength: false
+
+firstLineMatch: '' # A regular expression that is matched against the first line of the document when Atom is trying to decide if the grammar is appropriate. Useful for shell scripts, mostly.
+foldingStartMarker: '' # A regular expression that checks for the start of a foldable area (such as `{`).
+foldingStopMarker: '' # A regular expression that checks for the end of a foldable area (such as `}`). If both folding markers are matched in the same line, there will be no foldable area.
+patterns: [ # An array of individual pattern declarations.
+#  {
+#    comment: 'Use this to explain the function of the rule, if necessary'
+#    name: 'comment.line.t2f'
+#    match: '#.*$'
+#  }
+  {
+    comment: 'Kommentar'
+    name: 'comment.line.t2f'
+    match: '\\/\\/.*'
+  }
+  {
+    comment: 'Frageparameter'
+    name: 'support.function.t2f'
+    match: '^\\[.*\\]'
+  }
+  {
+    comment: 'Fragetext'
+    name: 'markup.heading.t2f'
+    match: '(^[^\\/<\\[-])(.*)'
+  }
+  {
+    comment: 'Antworten'
+    name: 'support.class.t2f'
+    match: '^-[^\\[]*'
+  }
+  {
+    comment: 'Antwortparameter'
+    name: 'keyword.control.t2f'
+    match: '(?<=.)(\\[.*\\])'
+  }
+#  {
+#    'comment': 'test'
+#    'name': 'entity.other.t2f'
+#    'match': '\\b(as|assert|del|exec|print)\\b'
+#  }
+]
