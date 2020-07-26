@@ -1,7 +1,7 @@
 {
   "name": "text2form",
   "main": "./lib/language-t2f",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Very basic syntax highlighting for text2form",
   "repository": "https://github.com/r-aph/language-t2f",
   "keywords": [
