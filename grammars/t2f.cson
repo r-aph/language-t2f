@@ -1,7 +1,7 @@
 scopeName: 'source.t2f'
 name: 'text2form'
 fileTypes: [
-  'txt'
+  't2f'
 ]
 limitLineLength: false
 
