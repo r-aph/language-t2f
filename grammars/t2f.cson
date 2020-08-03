@@ -28,8 +28,8 @@ patterns: [ # An array of individual pattern declarations.
     comment: 'Antworten mit Parametern'
     match: '^(-[^\\[]*)(\\[.*\\])*(.*)'
     captures:
-      1: 'support.class.t2f'
-      2: 'keyword.control.t2f'
-      3: 'support.class.t2f'
+      1: name: 'support.class.t2f'
+      2: name: 'keyword.control.t2f'
+      3: name: 'support.class.t2f'
   }
 ]
